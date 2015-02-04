@@ -1,5 +1,6 @@
  var Web = require('edu/dat/Web'),
-	Story = require('edu/dat/Story');
+	Story = require('edu/dat/Story'),
+    custom = require('./custom.js');
 
 /**
  * Set up out story object.

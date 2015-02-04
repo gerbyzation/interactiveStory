@@ -6,7 +6,6 @@ router.setPublicDir('public');
 
 router.get('/', home);
 router.get('/{catagory}/{location}', showLocation);
-// router.get('/memories/{memory}', showMemory);
 router.error('404', error);
 
 function home (app, req, res) {
@@ -36,7 +35,7 @@ function showLocation(app, req, res, args) {
 
         // if no exits specified select 2 random memories as exits
         if (loc.exits === undefined) {
-
+        
             var memories = Object.keys(story.locations.memories).length;
             
             var random1 = Math.floor(Math.random() * memories);
@@ -48,6 +47,7 @@ function showLocation(app, req, res, args) {
             
             var dir1 = story.locations.memories[Object.keys(story.locations.memories)[random1]];
             var dir2 = story.locations.memories[Object.keys(story.locations.memories)[random2]];
+            console.log(Object.keys(story.locations.memories));
 
             loc.exits = [
                 {

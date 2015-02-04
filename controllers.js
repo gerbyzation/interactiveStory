@@ -9,39 +9,54 @@ router.get('/{location}', showLocation);
 router.error('404', error);
 
 function home (app, req, res) {
-
+    // under construction
     var templates = app.get('templates');
-    response.write(templates.render('home', {}));
-
-    response.end();
+    
+    res.end();
 
 }
 
 function showLocation(app, req, res, args) {
+
     var templates = app.get('templates');
     var story = app.get('story');
 
     if (story.hasLocation(args.location)) {
+
         var loc = story.fetchLocation(args.location);
 
-        if (true) {
-            console.log("bla");
+        if (typeof loc.datadescription_template !== undefined ) {
+            templates.add( 'desc',  __dirname + "/templates/desc/" + loc.datadescription_template + ".html");
+
+            var desc = templates.render('desc', {});
+            loc.setDescription(desc);
         }
 
+        var content = templates.render('content', loc);
+
+        res.write(templates.render('template', {
+            content: html
+        }));
+
     } else {
+
         router.triggerErrorListener('404', req, res);
     }
 
-    response.end();
+    res.end();
+
 }
 
-function error() {
+function error(app, req, res) {
+
     var templates = app.get('templates');
 
-    response.writeHead(404, {"content-type": "text/html"});
-    response.write(templates.render('notfound', {}));
+    res.writeHead(404, {"content-type": "text/html"});
+    console.log(templates);
+    res.write(templates.render('notfound', {}));
 
-    response.end();
+    res.end();
+
 }
 
 module.exports = router;

@@ -1,24 +1,56 @@
-/*
-    Maybe put in a JS file which returns a JSON object so expressions can be used for directions?
-*/
-
-
 {
 
-	"locations":
-	{
-        "intro": {
-            "name": "Introduction",
-            "description": "",
-            "description_template": "intro",
-            "actors": [],
-            "exits": [
-                {"direction": "west", "destination": "fairy_queen", "text": "Lead Simon to see the fairy queen."},
-                {"direction": "south", "destination": "gryffon", "text": "Take Simon to visit the Gryffon."},
-                {"direction": "east", "destination": "unicorn_lord", "text": "Address the unicorn lord."}
-            ]
+	"locations": {            
+        "present": {
+        
+            "intro": {
+                "name": "Intro",
+                "description": "",
+                "description_template": "intro",
+                "exits": [
+                    {
+                        "destination": "maninblack",
+                        "text": "The men"
+                    }
+                ]
+            },
+
+            "maninblack": {
+                "name": "Man in Black",
+                "description_template": "maninblack",
+                "exits": [
+                    {
+                        "direction": "intro", 
+                        "text": "Go back to intro"
+                    }
+                ]
+            }, 
+
+            "blank": {
+                "name": "Blank",
+                "description_template": "blank"
+            }
+
         },
-	},
+
+        "memories": {
+
+            "beach": {
+                "name": "The Beach",
+                "description_template": "beach"
+            },
+
+            "breakfast": {
+                "name": "Breakfast",
+                "description_template": "breakfast"
+            },
+
+            "playground": {
+                "name": "The Playground",
+                "description_template": "playground"
+            }
+        }
+    },
 
 	"actors":
 	{

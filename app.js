@@ -5,15 +5,16 @@
  * Set up out story object.
  */
 var story = new Story.Story();
-story.buildFromJsonFile(__dirname + "/adventure.json");
+story.buildFromJsonFile( __dirname + "/adventure.json");
 
 /**
  * Lets get a read on where our html is....
  */
 var templates = new Web.Templates();
 
-templates.add('template',   __dirname + '/templates/tempalte.html');
-
+templates.add('template',   __dirname + '/templates/template.html');
+templates.add('content',    __dirname + '/templates/content.html');
+templates.add('notfound',   __dirname + '/templates/notfound.html');
 
 /**
  * Create our application, give it the references that we have set up
@@ -26,6 +27,8 @@ app.setPort(8080);
 app.set('templates', templates);
 app.set('story', story);
 
-app.setRouter(require(__dirname + '/controllers.js'));
+app.setRouter(require( __dirname + '/controllers.js'));
 
 app.run();
+
+console.log(app.get('templates'));

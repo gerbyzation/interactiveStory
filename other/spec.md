@@ -40,7 +40,7 @@ It starts in the hospital. A woman wakes up and can't remember anything, but she
 
 4 Februari 2:00: I have written some scenes for the story. I want to add a few more later on, but these are not mandatory for this to work so I'm gonna set up the whole thing first. I have worked on getting the templates rendered. Made a few silly mistakes so spend too much the evening trying to get stuff working. That's resolved now, but I haven't been able to get the page rendering working. I've split the locations in 2 objects, so that the memory can be randomised. To make this work I need to alter some things in the code of the app. 
 
-4 Februari 23:00: I have finished implementing the code to support the 2 catagories. The code is now in a seperate file, but doesn't use the OOP because I couldn't get it to work. It didn't like the constructor function. Now it's just using prototypes.
+4 Februari 23:00: I have finished implementing the code to support the 2 catagories. The code is now in a seperate file, but doesn't use the OOP because I couldn't get it to work. It didn't recognise the constructor function, so the file might not have been imported in the right way? But since it's a custom module I can't find a lot of help on the internet about it Now it's just using prototypes and works fine again. (Why do we even need OOP in JS? It's just wasting my time). I had hoped to be past the code and to have done some work tonight on the design of the story, but because of the issues with seperating the code I didn't get around to that.
 
 ## Testing
 

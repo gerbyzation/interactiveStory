@@ -11,6 +11,10 @@
                     {
                         "destination": "maninblack",
                         "text": "The men"
+                    },
+                    {
+                        "destination": "blank",
+                        "text": "Blank"
                     }
                 ]
             },
@@ -20,8 +24,8 @@
                 "description_template": "maninblack",
                 "exits": [
                     {
-                        "direction": "intro", 
-                        "text": "Go back to intro"
+                        "destination": "blank", 
+                        "text": "Blank memory"
                     }
                 ]
             }, 

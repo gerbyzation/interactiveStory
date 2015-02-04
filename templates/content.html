@@ -1,4 +1,14 @@
 <section>
     <h1>{{ name }}</h1>
+
+    {{ description }}
+
+    {% if exits %}
+
+        {% for exit in exits %}
+            <a href="{{ exit.destination }}">{{ exit.text }}</a>
+        {% endfor %}
+
+    {% endif %}
     
 </section>

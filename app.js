@@ -5,7 +5,7 @@
 /**
  * Set up out story object.
  */
-var story = new Story.Story();
+var story = new Story();
 story.buildFromJsonFile( __dirname + "/adventure.json");
 
 /**

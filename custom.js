@@ -1,6 +1,6 @@
 var OOP = require('ws-oop.js'),
     FileSystem = require("fs"),
-    Story = require('./node_modules/edu/dat/Story/index.js'),
+    oStory = require('./node_modules/edu/dat/Story/Story.js'),
     StoryLocation = require('./node_modules/edu/dat/Story/StoryLocation.js'),
     Actor = require('./node_modules/edu/dat/Story/Actor.js');
 
@@ -96,6 +96,6 @@ Story = (function(_super) {
 
     return Story;
 
-})(Story);
+})(oStory);
 
 module.exports = Story;

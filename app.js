@@ -1,11 +1,11 @@
  var Web = require('edu/dat/Web'),
-	Story = require('edu/dat/Story'),
-    custom = require('./custom.js');
+	// Story = require('edu/dat/Story'),
+    Story = require('./custom.js');
 
 /**
  * Set up out story object.
  */
-var story = new Story.Story();
+var story = new Story();
 story.buildFromJsonFile( __dirname + "/adventure.json");
 
 /**
@@ -32,3 +32,4 @@ app.set('story', story);
 app.setRouter(require( __dirname + '/controllers.js'));
 
 app.run();
+console.log(story.locations.memories);

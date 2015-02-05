@@ -42,6 +42,10 @@ It starts in the hospital. A woman wakes up and can't remember anything, but she
 
 4 Februari 23:00: I have finished implementing the code to support the 2 catagories. The code is now in a seperate file, but doesn't use the OOP because I couldn't get it to work. It didn't recognise the constructor function, so the file might not have been imported in the right way? But since it's a custom module I can't find a lot of help on the internet about it Now it's just using prototypes and works fine again. (Why do we even need OOP in JS? It's just wasting my time). I had hoped to be past the code and to have done some work tonight on the design of the story, but because of the issues with seperating the code I didn't get around to that.
 
+5 Februari 12.00: I tried again to get the OOP working, but without success. THe file seems to give no errors, but still the superclass methods are used instead of the subclass. Send Will an email and will stick with overwriting the methods via the prototype way for now. 
+
+5 Februari 14.30: I have choosen a fontpair from Google Fonts which I want to use. Also I found a website with some free images under CC0 license. 
+
 ## Testing
 
 - Who are you going to show your product to?

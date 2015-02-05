@@ -16,6 +16,7 @@ var templates = new Web.Templates();
 templates.add('template',   __dirname + '/templates/template.html');
 templates.add('content',    __dirname + '/templates/content.html');
 templates.add('notfound',   __dirname + '/templates/notfound.html');
+templates.add('intro',   __dirname + '/templates/intro.html');
 
 /**
  * Create our application, give it the references that we have set up

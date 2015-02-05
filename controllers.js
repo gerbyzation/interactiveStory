@@ -4,14 +4,17 @@ var router = new HttpRouter();
 
 router.setPublicDir('public');
 
-router.get('/', home);
+router.get('/', start);
 router.get('/{catagory}/{location}', showLocation);
 router.error('404', error);
 
-function home (app, req, res) {
-    // under construction
-    var templates = app.get('templates');
+function start (app, req, res) {
     
+    var templates = app.get('templates');
+    var content = templates.render('intro', {});
+    res.write(templates.render('template', {
+        content: content
+    }));
     res.end();
 
 }
@@ -47,7 +50,6 @@ function showLocation(app, req, res, args) {
             
             var dir1 = story.locations.memories[Object.keys(story.locations.memories)[random1]];
             var dir2 = story.locations.memories[Object.keys(story.locations.memories)[random2]];
-            console.log(Object.keys(story.locations.memories));
 
             loc.exits = [
                 {
@@ -67,9 +69,9 @@ function showLocation(app, req, res, args) {
         }));
 
     } else {
-        console.log("no location");
 
         router.triggerErrorListener('404', req, res);
+
     }
 
     res.end();

@@ -1,15 +1,37 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300|Open+Sans:300italic,400italic,400,600,300);
-
+/* 
+ * General styles 
+ */
 body {
-    font-family: Open Sans;
-    font-weight: 300;
-}
+  font-family: Open Sans;
+  font-weight: 300; }
 
-h1, 
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: Oswald;
-}
+  font-family: Oswald; }
+
+/* 
+ * Landing page
+ */
+.title {
+  font-size: 8em;
+  text-align: center; }
+  .title h1 {
+    margin-top: 32vh;
+    margin-bottom: 0; }
+  .title a {
+    font-size: 0.3em;
+    color: black;
+    text-decoration: none;
+    padding: 0.2em 1em;
+    text-transform: uppercase;
+    border: 3px solid black; }
+  .title a:hover {
+    color: white;
+    background-color: black; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,23 +1,23 @@
 var OOP = require('ws-oop.js'),
     FileSystem = require("fs"),
-    Story = require('./node_modules/edu/dat/Story/Story.js'),
+    Story = require('./node_modules/edu/dat/Story/index.js'),
     StoryLocation = require('./node_modules/edu/dat/Story/StoryLocation.js'),
     Actor = require('./node_modules/edu/dat/Story/Actor.js');
 
 
-// var Story;
-// /*
-//  * Overwriting some methods to allow for location catagories in adventure.js
-//  */
-// Story = (function(_super) {
+var Story;
+/*
+ * Overwriting some methods to allow for location catagories in adventure.js
+ */
+Story = (function(_super) {
 
-//     OOP.__extends(Story, _super);
+    OOP.__extends(Story, _super);
 
-//     // function Story() {
+    function Story() {
 
-//     //     // Story.__super__.constructor.apply(this, arguments);
+        Story.__super__.constructor.apply(this, arguments);
 
-//     // }
+    }
 
     Story.prototype.addLocation = function(catagory, name, obj) {
 
@@ -60,6 +60,7 @@ var OOP = require('ws-oop.js'),
 
         var text = FileSystem.readFileSync(filepath, "utf8");
         var json = JSON.parse(text);
+        console.log('new JSON builder');
 
         for (var catagory in json.locations) {
 
@@ -93,8 +94,8 @@ var OOP = require('ws-oop.js'),
 
     }; 
 
-//     return Story;
+    return Story;
 
-// })(oStory);
+})(Story);
 
-// module.exports = Story;
+module.exports = Story;

@@ -36,7 +36,7 @@ function showLocation(app, req, res, args) {
         // if no exits specified select 2 random memories as exits
         if (loc.exits === undefined) {
         
-            var memories = Object.keys(story.locations.memories).length;
+            var memories = Object.keys(story.locations.memories.data).length;
             
             var random1 = Math.floor(Math.random() * memories);
             var random2;
@@ -45,9 +45,13 @@ function showLocation(app, req, res, args) {
                 random2 = Math.floor(Math.random() * memories);
             } while ( random2 == random1 );
             
-            var dir1 = story.locations.memories[Object.keys(story.locations.memories)[random1]];
-            var dir2 = story.locations.memories[Object.keys(story.locations.memories)[random2]];
-            console.log(Object.keys(story.locations.memories));
+            var dir1 = story.locations.memories.data[Object.keys(story.locations.memories.data)[random1]];
+            var dir2 = story.locations.memories.data[Object.keys(story.locations.memories.data)[random2]];
+
+            // console.log(story.locations.memories.data);
+            // console.log("1", dir1);
+            // console.log("2", dir2);
+            console.log(loc);
 
             loc.exits = [
                 {
@@ -61,7 +65,7 @@ function showLocation(app, req, res, args) {
         }
 
         var content = templates.render('content', loc);
-
+        console.log(content);
         res.write(templates.render('template', {
             content: content
         }));

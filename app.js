@@ -32,4 +32,4 @@ app.set('story', story);
 app.setRouter(require( __dirname + '/controllers.js'));
 
 app.run();
-console.log(story.locations.memories);
+// console.log(story.locations.memories);

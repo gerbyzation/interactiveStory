@@ -38,18 +38,21 @@ function showLocation(app, req, res, args) {
 
         // if no exits specified select 2 random memories as exits
         if (loc.exits === undefined) {
-        
-            var memories = Object.keys(story.locations.memories.data).length;
             
-            var random1 = Math.floor(Math.random() * memories);
-            var random2;
+            var memories = Object.keys(story.locations.memories).length;
+            var current = Object.keys(story.locations.memories).indexOf(loc.key);
+            
+            console.log(current);
+
+            var random1, random2;
 
             do {
+                random1 = Math.floor(Math.random() * memories);
                 random2 = Math.floor(Math.random() * memories);
-            } while ( random2 == random1 );
+            } while ( random2 == random1 || random1 == current || random2 == current);
 
-            var dir1 = story.locations.memories.data[Object.keys(story.locations.memories.data)[random1]];
-            var dir2 = story.locations.memories.data[Object.keys(story.locations.memories.data)[random2]];
+            var dir1 = story.locations.memories[Object.keys(story.locations.memories)[random1]];
+            var dir2 = story.locations.memories[Object.keys(story.locations.memories)[random2]];
 
             loc.exits = [
                 {
@@ -63,7 +66,7 @@ function showLocation(app, req, res, args) {
         }
 
         var content = templates.render('content', loc);
-        console.log(content);
+
         res.write(templates.render('template', {
             content: content
         }));
@@ -84,7 +87,6 @@ function error(app, req, res, args) {
 
     res.writeHead(404, {"content-type": "text/html"});
     res.write(templates.render('notfound', {}));
-    console.log(args);
 
     res.end();
 

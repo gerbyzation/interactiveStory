@@ -14,14 +14,23 @@
       stroke: #000;
       stroke-dasharray: 1000;
       stroke-dashoffset: 1000;
-      animation: dash 5s linear forwards;
+      -webkit-animation: dash 1s linear infinite;
+      animation: dash 1s linear infinite;
+    }
+
+    @-webkit-keyframes dash {
+      from {
+        stroke-dashoffset: 1000;
+      } to {
+        stroke-dashoffset: 0;
+      }
     }
 
     @keyframes dash {
       from {
-        stroke-dashoffset:1000;
+        stroke-dashoffset: 1000;
       } to {
-        stroke-dashoffset:0;
+        stroke-dashoffset: 0;
       }
     }
   </style>

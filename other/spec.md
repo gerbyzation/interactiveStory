@@ -1,4 +1,4 @@
-# Specification For <Insert your project name here>
+# Specification For Fractured
 
 ## Analysis
 
@@ -6,7 +6,7 @@
 
 My story is about someone who wakes up in the hospital and has lost her memory. She tries to recall who she is and what happened. Also I would like to make the user have influence on. 
 
-Some people say the best stories are the one's created by imagination. With my story I want to leave it open-ended so that people will use their imagination to fill in the (rather big) gaps. (why and how)
+Some people say the best stories are the one's created by imagination. With my story I want to leave it open-ended so that people will use their imagination to fill in the (rather big) gaps. (why and how) This also enables me to later extend the story and wor
 
 My story won't have a lot of different routes that can be taken, but give the user influence in the order of the scenes and the character. Also I want to randomise the order of the memories to imply the status of fragmented memory. 
 
@@ -55,17 +55,34 @@ My story is designed to be used on a computer screen, will probably still work f
 
 - Who are you going to show your product to?
 
-My coursemates and lecturer
+Coursemates/lecturer(s)
 
 - What do you want to test?
 
-
+Primarily the functionality of the code.
+Secondary I want to know how people experience the story
 
 - What feedback are you expecting?
 
-
+I expect I will get some feedback on the story, which doesn't really have an ending and might be experienced as incoherent
 
 - What feedback did you get (good and bad)?
+
+Simon Lock:
+Nice atmospheric experience, hangs together well
+Would have been nice to have had some images in the hospital
+was a bit worried about the lumberjack's dead girlfriend
+Some of the narratives were a bit hard to follow - leaving them open to interpretation was interesting
+
+Rob Stenhouse:
+i like the images used in the story , the story seemed to keep looping without a ending aviable on certain parts, the story idea was good and very interesting. some of the text over the images was a little hard to read all in all a good story
+
+daniel lillie: 
+very nice graphics. Images are super high resolution. The LOOP OF THE STORY IS DISTURBING. The font goes very nice with the graphic. loving the style . awesome work. looking forward for the heart rate animation. quite short for this kind of narrative story. overall is great to experience.
+
+James Parker
+
+Lovely Atmosphere created by the story, keeps the story "moving", good use of pictures, the never-ending tale was a curious way to tell the story, overall, very enjoyable.
 
 
 

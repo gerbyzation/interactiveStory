@@ -36,15 +36,14 @@ function showLocation(app, req, res, args) {
             loc.setDescription(desc);
         }
 
-        // if no exits specified select 2 random memories as exits
+        // if no exits specified select 2 random memories as exits, but different as current page
         if (loc.exits === undefined) {
             
             var memories = Object.keys(story.locations.memories).length;
             var current = Object.keys(story.locations.memories).indexOf(loc.key);
             
-            console.log(current);
-
             var random1, random2;
+
 
             do {
                 random1 = Math.floor(Math.random() * memories);
@@ -54,6 +53,7 @@ function showLocation(app, req, res, args) {
             var dir1 = story.locations.memories[Object.keys(story.locations.memories)[random1]];
             var dir2 = story.locations.memories[Object.keys(story.locations.memories)[random2]];
 
+            // 
             loc.exits = [
                 {
                     "destination": '/memories/' + dir1.key,// display the key

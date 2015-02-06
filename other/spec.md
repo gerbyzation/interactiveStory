@@ -22,12 +22,13 @@ It starts in the hospital. A woman wakes up and can't remember anything, but she
 
 ### List your routes and what they are for.
 
-- /: goes to the 
+- /: goes to the start page
+- /{catagory}/{location} this follows the story, 
 
 
 ### List examples of how people will use your story.
 
-
+My story is designed to be used on a computer screen, will probably still work fine on tablets with a decent resolution
 
 
 ## Implementation
@@ -45,6 +46,10 @@ It starts in the hospital. A woman wakes up and can't remember anything, but she
 5 Februari 12.00: I tried again to get the OOP working, but without success. THe file seems to give no errors, but still the superclass methods are used instead of the subclass. Send Will an email and will stick with overwriting the methods via the prototype way for now. 
 
 5 Februari 14.30: I have choosen a fontpair from Google Fonts which I want to use. Also I found a website with some free images under CC0 license. 
+
+6 Februari 14.00: I'm not feeling to well and very tired, so I didn't manage to work on any more in the evening. Now just continuing styling and making minor adjustments to code. Have made sure the random selection doesn't select the current page as an option as well. Also trying to get the heartbeat SVG animation I made to work on the first page.
+
+6 Februari 16.00: The animation isn't working out very well yet, would need to tweak the settings and I can't be bothered now with all the other stuff still left to do. 
 
 ## Testing
 

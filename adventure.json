@@ -52,6 +52,16 @@
             "playground": {
                 "name": "The Playground",
                 "description_template": "playground"
+            },
+
+            "football": {
+                "name": "Football",
+                "description_template": "football"
+            },
+
+            "valentine": {
+                "name": "Valentine Day",
+                "description_template": "valentine"
             }
         }
     },

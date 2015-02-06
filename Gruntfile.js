@@ -15,6 +15,9 @@ module.exports = function (grunt) {
             }
         }
     });
+
+    // add: watch for change in server files and reboot node server
+    
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.registerTask('default',['watch']);

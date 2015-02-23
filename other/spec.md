@@ -84,6 +84,10 @@ James Parker
 
 Lovely Atmosphere created by the story, keeps the story "moving", good use of pictures, the never-ending tale was a curious way to tell the story, overall, very enjoyable.
 
+James Harris:
+
+Very nicely designed story. I love the fade ins and the transparent menu above the images. The story itself was good too, I actually read all of it unlike other stories. It was not a long chunk to read which kept me interested. Really cool overall but it could be longer.
+
 
 
 - What changes are you going to make based on your feedback? 

@@ -2,5 +2,7 @@ bower_components*
 .sass-cache*
 node_modules/*
 other/*
+public/originals/*
+assets/*
 
 !node_modules/edu/dat*

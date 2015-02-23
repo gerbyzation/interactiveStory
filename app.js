@@ -24,7 +24,7 @@ templates.add('intro',   __dirname + '/templates/intro.html');
  */
 var app = new Web.Application();
 
-app.setPort(8080);
+app.setPort(process.env.PORT || 8080);
 
 app.set('templates', templates);
 app.set('story', story);

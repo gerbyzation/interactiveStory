@@ -1,5 +1,6 @@
 bower_components*
 .sass-cache*
 node_modules/*
+other/*
 
 !node_modules/edu/dat*
